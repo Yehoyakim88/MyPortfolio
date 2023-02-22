@@ -1,0 +1,17 @@
+@import "./assets/fonts/fonts.scss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins';
+    color: #FFFF;
+    background-color: #141D2F;;
+}
+
+:root {
+    --height-menu: 14.865vh;
+    --height-content: 85.135vh;
+}

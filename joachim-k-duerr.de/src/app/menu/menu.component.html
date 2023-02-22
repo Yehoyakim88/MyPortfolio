@@ -1,0 +1,22 @@
+<div class="contentMenu">
+    <div id="menu" class="fixedMenu">
+        <a href = "#" class="logoLinkClass"><img class="logoImage" src="./../../assets/img/j-development-logo.png" ></a>
+        <div class="menuLinks">
+            <a href="#about-me">About me</a>
+            <a href="#my-skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact" style="margin-right: 0px !important;">Contact</a>
+        </div>
+    </div>
+    <div id="menu-mobile" class="fixedMenuMobile">
+        <a class="logoLink" href = "#"><img class="logoImage" src="./../../assets/img/j-development-logo.png" ></a>
+        <img id="burger-menu-image" class="burgerMenuImage" src="./../../assets/img/burger-menu.png" (click)="openDropDownMenu()">
+    </div>
+    <div id="dropdown-menu" class="dropDownMenu d-none">
+        <img class="dropDownCloseButton" src="./../../assets/img/dropdownMenuClose.png" (click)="closeDropDownMenu()">
+        <a href="#about-me" style="margin-top: 15vh" class="dropdownLink" (click)="closeDropDownMenu()">About me</a>
+        <a href="#my-skills" class="dropdownLink" (click)="closeDropDownMenu()">Skills</a>
+        <a href="#portfolio" class="dropdownLink" (click)="closeDropDownMenu()">Portfolio</a>
+        <a href="#contact" class="dropdownLink" (click)="closeDropDownMenu()">Contact</a>
+    </div>
+</div>

@@ -1,0 +1,316 @@
+.headerContent {
+  // position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+}
+
+.mainImageAndText {
+  // height: calc(var(--height-content))
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--height-menu);
+    margin-left: 100px;
+}
+
+.mainImage {
+    height: calc(var(--height-content) - var(--height-menu));
+}
+
+.gradientImage {
+    display: none;
+    position: absolute;
+    height: 467.43px;
+    width: 100vw;
+    // left: 19.93%;
+    // right: -80.64%;
+    top: 10vh;
+}
+
+.mainTextAndButton {
+    z-index: 2;
+    position: relative;
+    left: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 188px;
+}
+
+.mainText {
+//   margin-top: 188px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: blueviolet;
+}
+
+.nameAndJobtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.iam {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 120%;
+    letter-spacing: 2px;
+    writing-mode: vertical-lr;
+    text-align: end;
+    text-indent: 0px;
+    transform: rotate(-180deg);
+}
+
+.name {
+    font-family: "Poppins Bold";
+    font-weight: 700;
+    font-size: 90px; // before 6.25vw
+    line-height: 120%;
+    color: #ffffff;
+}
+
+.jobTitle {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 58px; // before 4.0278vw
+    line-height: 120%;
+    color: #4b47ff;
+}
+
+.letsTalkButton {
+    display: flex;
+    z-index: 2;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    padding: 15px 30px;
+    margin-top: 44px;
+    width: 165px;
+    height: 58px;
+    background: #00bee8;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+
+    a {
+        width: 105px;
+        height: 28px;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 120%;
+        color: #ffffff;
+        text-decoration: none;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+    &:hover {
+        background: #4b47ff;
+        transition: 0.3s ease-in-out;
+        transform: scale(1.2);
+    }
+}
+
+.letsTalkButtonMobile {
+    display: none;
+    z-index: 2;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-top: 26px;
+    margin-bottom: 40px;
+    padding: 15px 30px;
+    width: 165px;
+    height: 58px;
+    background: #00bee8;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+
+    a {
+        width: 105px;
+        height: 28px;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 120%;
+        color: #ffffff;
+        text-decoration: none;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+    &:hover {
+        background: #4b47ff;
+        transition: 0.3s ease-in-out;
+        transform: scale(1.2);
+    }
+}
+
+.socialMedia {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.vector1 {
+    z-index: 1;
+    width: 94px;
+    height: 0px;
+    border: 3px solid #4b47ff;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.socialMediaImages {
+    align-self: center;
+    margin-left: 42px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.socialMediaEmail {
+    margin-left: 42px;
+}
+
+.scrollContainer {
+    z-index: 2;
+    cursor: pointer;
+    position: absolute;
+    bottom: 106px;
+    right: 0px;
+    margin-right: 72px;
+    width: fit-content;
+    a {
+        text-decoration: none !important;
+        &:hover {
+        cursor: pointer;
+        }
+    }
+
+    transform: rotate(90deg) !important;
+}
+
+.linkContainer {
+    display: flex;
+    align-items: center;
+}
+
+.scrollDown {
+    cursor: pointer;
+    z-index: 2;
+    margin-right: 8px;
+    width: 133px;
+    height: 28px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 120%;
+    color: #ffffff;
+}
+
+.scrollDownImage {
+    z-index: 2;
+    transform: rotate(-90deg);
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+    align-self: center;
+}
+
+@media (max-width: 600px) {
+    .headerContent {
+        align-items: center;
+    }
+
+    .mainImageAndText {
+        margin-left: 0px !important;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainImage {
+        height: 100%;
+        width: 70%;
+        object-fit: cover;
+    }
+
+    .gradientImage {
+        width: 100vw !important;
+        height: 300px !important;
+        top: 46vh !important; 
+    }
+
+    .mainTextAndButton {
+        left: 0px !important;
+    }
+
+    .mainTextAndButton {
+        margin-top: 30px;
+        margin-right: 0px !important;
+    }
+
+    .mainText {
+        margin-right: 0px !important;
+    }
+
+    .iam {
+        margin-top: 5px !important;
+        font-size: 32px !important;
+    }
+
+    .name {
+        font-size: 45px !important;
+    }
+
+    .jobTitle {
+        font-size: 29px !important;
+    }
+
+    .letsTalkButtonMobile {
+        display: flex !important;
+    }
+
+    .letsTalkButton {
+        display: none !important;
+    }
+
+    .socialMedia {
+        margin-top: 50px !important;
+    }
+
+    .socialMediaEmail {
+        display: none !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .iam {
+        margin-top: 5px !important;
+        font-size: 30px !important;
+      }
+    
+      .name {
+        font-size: 42px !important;
+      }
+    
+      .jobTitle {
+        font-size: 28px !important;
+      }
+
+}

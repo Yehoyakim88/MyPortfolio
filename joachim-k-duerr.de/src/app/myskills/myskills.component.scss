@@ -1,0 +1,329 @@
+.mySkillsContent {
+    height: 100vh;
+    display: flex;    
+}
+
+.mySkillsSubcontainer {
+    background-color: rgb(229, 255, 0);
+    margin-top: var(--height-menu);
+    margin-left: 28px;
+    margin-right: 28px;
+    display: flex;
+}
+
+.skillsLeft {
+    display: flex;
+    width: 43.06vw;
+    flex-wrap: wrap;
+    z-index: 2;
+    margin-top: 32px;
+  }
+  
+  .skillsImages {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 170px;
+    margin-left: 16px;
+    margin-right: 16px;
+    z-index: 1;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .skillImage {
+    height: 4.17vw;
+    width: 4.17vw;
+    cursor: pointer;
+    margin-bottom: 10px;
+    &:hover {
+      filter: drop-shadow(0 0 1.5rem #4b47ff);
+    }
+  }
+  
+  .iconName {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    color: #ffffff;
+    margin-bottom: 60px;
+  }
+  
+  .skillsDescription {
+    position: absolute;
+    right: 0px;
+    top: calc((2000 / 1440) * 100)vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    width: 43.06vw;
+  }
+  
+  .mySkillsHeader {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 34px;
+    font-family: "Poppins Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6.25vw; // 90px
+    line-height: 120%;
+    text-align: end;
+    color: #ffffff;
+    span {
+      margin-right: 42px;
+    }
+  }
+  
+  .mySkillsLine {
+    position: relative;
+    right: 0px;
+    width: 52px;
+    border: 3px solid #4b47ff;
+    border-radius: 4px 0px 0px 4px;
+  }
+  
+  .secondContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .mySkillsSubText {
+    margin-right: 70px;
+    margin-bottom: 57px;
+    height: 38px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: end;
+    color: #ffffff;
+  }
+  
+  .getInTouchButton {
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    padding: 15px 30px;
+    margin-top: 57px;
+    gap: 10px;
+    width: 200px;
+    height: 58px;
+    background: #00bee8;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 120%;
+    a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  
+    &:hover {
+      background: #4b47ff;
+      transition: 0.3s ease-in-out;
+      transform: scale(1.2);
+    }
+  }
+  
+  .getInTouchButtonMobile {
+    z-index: 2;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-top: 67px;
+    margin-bottom: 80px;
+    padding: 15px 30px;
+    gap: 10px;
+    width: 200px;
+    height: 58px;
+    background: #00bee8;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 120%;
+    a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  
+    &:hover {
+      background: #4b47ff;
+      transition: 0.3s ease-in-out;
+      transform: scale(1.2);
+    }
+  }
+  
+  .myClass {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 428.59px;
+    height: 951.44px;
+    left: 0;
+    top: 2160px;
+  }
+  
+  @media (max-width: 1050px) {
+    .skillsImages {
+      width: 120px !important;
+    }
+  }
+  
+  @media (max-width: 950px) {
+    .getInTouchButton {
+      margin-top: 57px !important;
+    }
+  }
+  
+  @media (max-width: 836px) {
+    .skillsImages {
+      width: 100px !important;
+    }
+  }
+  
+  @media (max-width: 696px) {
+    .skillsImages {
+      width: 98px !important;
+    }
+  }
+  
+  @media (max-width: 682px) {
+    .skillsImages {
+      width: 90px !important;
+    }
+  }
+  
+  @media (max-width: 638px) {
+    .skillsDescription {
+      width: 45vw;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .contentMySkills {
+      height: fit-content !important;
+      margin-top: 0px !important;
+    }
+  
+    .mainContainer {
+      flex-direction: column-reverse;
+      margin-top: 0px !important;
+    }
+  
+    .skillsLeft {
+      width: unset !important;
+      justify-content: space-between;
+      margin-left: 10px !important;
+      margin-right: 10px !important;
+    }
+  
+    .skillsImages {
+      width: 100px !important;
+    }
+  
+    .skillImage {
+      margin-right: 30px;
+      margin-left: 30px;
+      height: 60px !important;
+      width: 60px !important;
+    }
+  
+    .skillsDescription {
+      position:  relative !important;
+      right: -60px;
+      width: unset !important;
+      margin-top: 154px !important;
+      margin-bottom: 63px !important;
+      align-items: flex-end;
+    }
+  
+    .mySkillsHeader {
+      width: unset !important;
+      margin-right: 0px !important;
+      font-size: 45px !important;
+    }
+  
+    .mySkillsSubText {
+      width: unset !important;
+      margin-right: 68px !important;
+      font-size: 16px !important;
+    }
+  
+    .getInTouchButton {
+      width: unset !important;
+      display: none !important;
+    }
+  
+    .getInTouchButtonMobile {
+      display: flex !important;
+      margin-top: 0px !important;
+    }
+  
+    .myClass {
+      width: 85vw !important;
+    }
+  }
+  
+  @media (max-width: 460px) {
+    .skillsDescription {
+      position: initial;
+      right: unset !important;
+    }
+  
+    .mySkillsHeader {
+      position: relative;
+      right: -13vw !important;
+    }
+  }
+  
+  @media (max-width: 414px) {
+    .skillsLeft {
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+    }
+  
+    .mySkillsSubText {
+      margin-right: 0px !important;
+    }
+  
+    .skillsImages {
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+    }
+  }
+  
+  @media (max-width: 388px) {
+    .mySkillsHeader {
+      font-size: 10vw !important;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .mySkillsHeader {
+      font-size: 9.5vw !important;
+    }
+  }
+  
