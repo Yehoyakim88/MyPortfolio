@@ -1,6 +1,214 @@
 .contactContent {
-    height: var(--height-content);
+    // height: fit-content;
     display: flex;
-    margin-top: var(--height-menu);
-    background-color: rgb(0, 132, 255);
+    flex-direction: column;
 }
+
+.contactSubcontainer {
+    background-color: rgb(0, 132, 255);
+    margin-top: var(--height-menu);
+    margin-left: 28px;
+    margin-right: 28px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactHeader {
+    position: relative;
+    // top: var(--height-menu);
+    left: -28px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contactHeaderLine {
+    width: 56px;
+    height: 0px;
+    border: 3px solid #4b47ff;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  
+  .contactHeaderText {
+    // position: absolute;
+    // left: 106px;
+    margin-left: 50px;
+    width: 376px;
+    height: var(--height-contactHeaderText);
+    font-family: "Poppins Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 120%;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .contactSubHeaderText {
+    display: flex;
+    font-family: "Poppins Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    color: #ffffff;
+  }
+  
+  .contactMainSection {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: calc(var(--height-contactHeaderText) + 85px + var(--height-menu));
+    margin-left: 6.94vw;
+  }
+  
+  .contactDescriptions {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 32.847vw;
+  }
+  
+  .contactDescParagraph {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
+  
+  .invitationContainer {
+    display: flex;
+  }
+  
+  .contactInvitationText {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
+  
+  .textBold {
+    font-family: "Poppins Bold";
+    font-weight: 400;
+    margin-left: 6px;
+  }
+  
+  .contactRightSide {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contactInputs {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .singleLineInput {
+    padding: 7.5px 25px;
+    width: 39.375vw;
+    height: 35px;
+    margin-bottom: 35px;
+    background: #141d2f;
+    border: 1px solid #4b47ff;
+    border-radius: 10px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #ffffff;
+    &:hover {
+      border: 1px solid #00bee8;
+    }
+  }
+  
+  .multiLineInput {
+    padding: 15px 25px;
+    width: 39.375vw;
+    height: 202px;
+    margin-bottom: 35px;
+    background: #141d2f;
+    border: 1px solid #4b47ff;
+    border-radius: 10px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #ffffff;
+    &:hover {
+      border: 1px solid #00bee8;
+    }
+  }
+  
+  .sendMessageButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    // align-items: center;
+    padding: 15px 30px;
+    margin-bottom: 102px;
+    width: 253px;
+    height: 58px;
+    /* identical to box height, or 28px */
+  
+    background: #00bee8;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: 0;
+  
+    // width: 193px;
+    // height: 58px;
+  
+    /* Style 1/subtitles */
+  
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 120%;
+    /* identical to box height, or 28px */
+  
+    /* White */
+  
+    color: #ffffff;
+  
+    &:hover {
+      cursor: pointer;
+      background: #4b47ff;
+      transition: 0.3s ease-in-out;
+      transform: scale(1.2);
+    }
+  }
+  
+  .goUpButton {
+    margin-top: 90px;
+    margin-bottom: 90px;
+    align-self: flex-end;
+    &:hover {
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+      transform: scale(1.2);
+    }
+  }
+  
+  .dBlue3Image {
+    position: absolute;
+    z-index: 1;
+    top: 492px;
+    left: -85px;
+    height: 775px;
+  }
+  
+  .dBlue3ImageOuter {
+    position: absolute;
+    top: 4000px;
+    left: -40px;
+  }
+  
+  .d-none {
+    display: none !important;
+  }

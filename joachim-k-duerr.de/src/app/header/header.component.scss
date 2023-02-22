@@ -1,5 +1,4 @@
 .headerContent {
-    // width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -7,11 +6,11 @@
 }
 
 .mainImageAndText {
-  // height: calc(var(--height-content))
     display: flex;
     justify-content: space-between;
     margin-top: var(--height-menu);
     margin-left: 100px;
+    background-color: rgb(0, 132, 255);
 }
 
 .mainImage {
