@@ -17,13 +17,11 @@
               </div>
               
             </div>
-            <div class="contactRightSide">
-                <form action="./../../assets/send_mail.php" method="POST" class="contactInputs">
+            <div class="contactInputs">
+                <form action="./../assets/send_mail.php" method="POST" class="contactInputsForm">
                     <input class="singleLineInput" type="text" name="name" placeholder="Your name" required/>
                     <input class="singleLineInput" type="text" name="mail" placeholder="Your email" required/>
-                    <textarea 
-                    class="multiLineInput" name="message" placeholder="Your message" required>
-                    </textarea>
+                    <textarea class="multiLineInput" rows="2" cols="20" name="message" placeholder="Your message" required></textarea>
                     <input type="submit" class="sendMessageButton" value="Send message :)"/>
                 </form>
                 <a href="#" class="goUpButton"><img src="./../../assets/img/Go up button.png"/></a>

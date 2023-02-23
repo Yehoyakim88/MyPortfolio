@@ -17,6 +17,11 @@
     width: 200px;
     height: 40px;
     object-fit: cover;
+
+    &:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
   }
   
   .imprintLink {
@@ -82,7 +87,7 @@
     cursor: pointer;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 620px) {
     .footerContent {
       flex-direction: column !important;
       align-items: center;

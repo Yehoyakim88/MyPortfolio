@@ -8,6 +8,7 @@
     margin-top: var(--height-menu);
     margin-left: 28px;
     margin-right: 28px;
+    height: fit-content;
 }
 
 .aboutMeHeader {
@@ -63,4 +64,10 @@
   .descText {
     margin-left: 42.76px;
     text-align: justify;
+  }
+
+  @media (max-width: 620px) {
+    .aboutMeContent {
+      height:fit-content !important;
+    }
   }

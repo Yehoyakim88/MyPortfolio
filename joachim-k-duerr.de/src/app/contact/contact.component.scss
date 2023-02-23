@@ -57,7 +57,7 @@
   .contactMainSection {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: calc(var(--height-contactHeaderText) + 85px + var(--height-menu));
     margin-left: 6.94vw;
   }
@@ -95,15 +95,18 @@
     margin-left: 6px;
   }
   
-  .contactRightSide {
+  .contactInputs {
     display: flex;
     flex-direction: column;
+    margin-left: 150px;
+    
   }
   
-  .contactInputs {
+  .contactInputsForm {
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   
   .singleLineInput {
@@ -211,4 +214,43 @@
   
   .d-none {
     display: none !important;
+  }
+
+  @media (max-width: 600px) {
+    .contactHeaderText {
+      font-size: 45px !important;
+    }
+
+    .contactSubHeaderText {
+      font-size: 23px !important;
+      margin-top: 20px !important;
+    }
+    
+    .contactMainSection {
+      // justify-content: space-between !important;
+      flex-direction: column !important;
+      margin-left: unset !important;
+    }
+
+    .contactDescriptions {
+      width: unset !important;
+    }
+
+    .contactDescParagraph {
+      margin-top: 25px !important;
+    }
+
+    .contactInputs {
+      margin-top: 45px !important;
+      width: 100%;
+      margin-left: 0px !important;
+    }
+
+    .singleLineInput {
+      width: -webkit-fill-available !important;
+    }
+
+    .multiLineInput {
+      width: -webkit-fill-available !important;
+    }
   }

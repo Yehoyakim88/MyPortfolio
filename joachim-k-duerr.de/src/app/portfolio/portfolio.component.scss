@@ -263,12 +263,31 @@
     }
 
     .descriptionContainerLeft {
-      width: fit-content !important;
+      width: 100% !important;
       align-items: center;
     }
 
     .descriptionContainerRight {
-      width: fit-content !important;
+      width: 100% !important;
       align-items: center;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .projectButtons {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .liveTestButton {
+      width: 40%;
+    }
+
+    .gitHubButton {
+      width: 40%;
+    }
+
+    .line6 {
+      right: -75px !important;
     }
   }

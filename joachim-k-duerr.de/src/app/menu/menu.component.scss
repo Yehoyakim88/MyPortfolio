@@ -57,6 +57,10 @@
   height: 50px;  // originally 200px
   object-fit: cover;
   margin-left: 25px;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 
 .burgerMenuImage {
@@ -64,6 +68,11 @@
   height: 30px;
   object-fit: cover;
   margin-right: 50px;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
 }
 
 .dropDownMenu {
@@ -84,8 +93,8 @@
 
 .dropDownCloseButton {
   position: absolute;
-  top: 50px;
-  right: 50px;
+  top: 40px;
+  right: 48px;
   &:hover {
     cursor: pointer;
     transform: scale(1.2);
@@ -126,12 +135,82 @@ a {
   display: none !important;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1059px) {
+  .menuLinks {
+    margin-left: 0px !important;
+  }
+}
+
+@media (max-width: 959px) {
+  .fixedMenu {
+    justify-content: unset !important;
+  }
+
+  .about-me-link {
+    margin-left: 0px !important;
+  }
+
+  .menuLinks {
+    margin-right: 0px !important;
+  }
+}
+
+@media (max-width: 864px) {
+  .logoLinkClass {
+    margin-right: 0px !important;
+  }
+}
+
+@media (max-width: 838px) {
+  .logoLinkClass {
+    margin-left: 0px !important;
+  }
+
+  .logoImage {
+    margin-left: 0px !important;
+  }
+}
+
+@media (max-width: 790px) {
+  .logoImage {
+    width: 265px !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .logoImage {
+    width: 230px !important;
+  }
+}
+
+@media (max-width:720px) {
+  .menuLinks a {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 680px) {
+  .logoImage {
+    width: 200px !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .menuLinks a {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 620px) {
   .fixedMenu {
     display: none !important;
   }
 
   .fixedMenuMobile {
     display: flex !important;
+  }
+
+  .logoImage {
+    width: 300px !important;
   }
 }
