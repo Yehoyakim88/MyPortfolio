@@ -87,6 +87,28 @@
     cursor: pointer;
   }
 
+  @media (max-width: 960px) {
+    .footerContent {
+      justify-content: space-evenly;
+    }
+
+    .logoAndImprintContainer {
+      margin-left: 0px !important;
+    }
+
+    .socialMedia {
+      margin-right: 0px !important;
+    }
+
+    .socialMediaGitHubImage {
+      margin-left: 20px !important;
+    }
+
+    .socialMediaImages {
+      margin-left: 20px !important;
+    }
+  }
+
   @media (max-width: 620px) {
     .footerContent {
       flex-direction: column !important;

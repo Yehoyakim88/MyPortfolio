@@ -243,7 +243,114 @@
     font-size: 23px;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 1284px) {
+    .projectButtons {
+      margin-top: 15px !important;
+    }
+  }
+
+  @media (max-width: 1040px) {
+    .descriptionContainerLeft {
+      align-items: center !important;
+    }
+
+    .descriptionContainerRight {
+      align-items: center !important;
+    }
+  }
+
+  @media (max-width: 906px) {
+    .projectDescription {
+      margin-top: 0px !important;
+    }
+
+    .projectTitle {
+      margin-bottom: 12.2125px !important;
+    }
+  }
+
+  @media (max-width:880px) {
+    .aProject {
+      margin-bottom: 190px !important;
+    }
+
+    .aProjectReverse {
+      margin-bottom: 190px !important;
+    }
+
+    .margin-bottom100 {
+      margin-bottom: 100px !important;
+    }
+
+    .projectContainer {
+      margin-top: 298px !important;
+    }
+
+    .descriptionContainerLeft {
+      align-items: center !important;
+    }
+
+    .descriptionContainerRight {
+      align-items: center !important;
+    }
+
+    .projectButtons {
+      width: unset !important;
+      margin-top: 17.5px !important;
+    }
+
+    .projectPreviewImage {
+      height: 220px !important;
+    }
+
+    .projectTitle {
+      margin-top: 0px !important;
+      margin-bottom: 0px !important;
+      height: fit-content !important
+    }
+
+    .projectTechnologies {
+      height:fit-content !important;
+      margin-bottom: 10px !important;
+    }
+
+    .liveTestButton {
+      height: 50px !important;
+    }
+
+    .gitHubButton {
+      height: 50px !important;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .projectPreviewImage {
+      height: 200px !important;
+    }
+
+    .projectTechnologies {
+      margin-bottom: 5px !important;
+    }
+
+    .liveTestButton {
+      height: 40px !important;
+      width: 105px !important;
+    }
+
+    .projectButtons {
+      margin-top: 12.5px !important;
+    }
+
+    .gitHubButton {
+      height: 40px !important;
+      width: 105px !important;
+    }
+  }
+
+  @media (max-width: 718px) {
+    .projectContainer {
+      margin-top: 298px !important;
+    }
     .aProject {
       flex-direction: column !important;
       margin-bottom: 127px !important;
@@ -271,23 +378,89 @@
       width: 100% !important;
       align-items: center;
     }
-  }
-
-  @media (max-width: 400px) {
-    .projectButtons {
-      width: 100%;
-      justify-content: space-between;
-    }
 
     .liveTestButton {
-      width: 40%;
+      height: unset !important;
+      width: unset !important;
     }
 
     .gitHubButton {
-      width: 40%;
+      height: unset !important;
+      width: unset !important;
+    }
+  }
+
+  @media (max-width: 460px) {
+    .projectTitle {
+      // margin-top: unset !important;
+      margin-bottom: 15px !important;
+    }
+
+    .projectTechnologies {
+      // margin-top: unset !important;
+      margin-bottom: 15px !important;
+    }
+
+    .projectDescription {
+      // margin-top: unset !important;
+      margin-bottom: unset !important;
+    }
+
+    .projectButtons {
+      margin-top: 35px !important;
+    }
+  }
+
+  @media (max-width: 440px) {
+    .portfolioHeader {
+      margin-left: 0px !important;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .testClass {
+      align-items: end !important;
+    }
+    .subHeaderMobile {
+      position: relative;
+      left: 0px;
+      text-align: right !important;
+    }
+
+    .portfolioHeader {
+      align-items: unset !important;
+    }
+
+    .projectButtons {
+      width: 100%;
+      justify-content: center !important;
+    }
+
+    .liveTestButton {
+      width: 40% !important;
+    }
+
+    .gitHubButton {
+      width: 40% !important;
     }
 
     .line6 {
-      right: -75px !important;
+      right: -60px !important;
+    }
+  }
+
+  @media (max-width: 350px) {
+    .liveTestButton {
+      width: 37% !important;
+    }
+
+    .gitHubButton {
+      width: 37% !important;
+    }
+  }
+
+  @media (max-width: 330px) {
+    .projectPreviewImage {
+      height: 160px !important;
     }
   }
