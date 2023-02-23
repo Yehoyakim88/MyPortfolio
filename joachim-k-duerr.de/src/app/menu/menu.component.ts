@@ -13,6 +13,9 @@ export class MenuComponent {
     let burger:HTMLElement = document.getElementById('burger-menu-image') as HTMLElement;
     dropdown.classList.remove('d-none');
     burger.classList.add('d-none');
+    let h = window.outerHeight;
+    let w = outerWidth;
+    alert(`height: ${h} px  width: ${w} px`);
   }
 
   closeDropDownMenu() {
