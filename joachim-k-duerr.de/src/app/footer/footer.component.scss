@@ -109,12 +109,20 @@
     }
   }
 
-  @media (max-width: 620px) {
+  @media (max-width: 740px) {
     .footerContent {
       flex-direction: column !important;
       align-items: center;
       justify-content: space-around !important;
     }
+  }
+
+  @media (max-width: 620px) {
+    // .footerContent {
+    //   flex-direction: column !important;
+    //   align-items: center;
+    //   justify-content: space-around !important;
+    // }
 
     .logoAndImprintContainer {
       margin-left: 0px !important;

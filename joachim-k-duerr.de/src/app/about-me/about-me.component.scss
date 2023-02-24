@@ -1,14 +1,18 @@
 .aboutMeContent {
     height: 100vh;
     display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
 }
 
 .aboutMeSubContainer {
     background-color: rgb(255, 149, 0);
     margin-top: var(--height-menu);
     margin-left: 28px;
-    margin-right: 28px;
+    // margin-right: 28px;
     height: fit-content;
+    max-width: 471px;
 }
 
 .aboutMeHeader {
@@ -19,7 +23,7 @@
     font-family: "Poppins Bold";
     font-style: normal;
     font-weight: 700;
-    font-size: 6.25vw; // 90x at window.innerWidth of 1440px
+    font-size: 90px; // 90px at window.innerWidth of 1440px or  6.25vw
     line-height: 120%;
     color: #ffffff;
   }
@@ -66,8 +70,162 @@
     text-align: justify;
   }
 
+  .aboutMeImageAndLine {
+    margin-top: var(--height-menu);
+    margin-left: 5vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .aboutMeImage {
+    z-index: 1;
+    width: 453px; // before: 31.46vw
+    height: 453px; // before: 31.46vw
+    object-fit: cover;
+    border-radius: 100%;
+    border: 4px solid #00bee8;
+    background-position-y: 45%;
+  }
+  
+  .line7 {
+    // position: absolute;
+    // top: 50vh;
+    // right: 0px;
+    // justify-self: center;
+    z-index: 1;
+    // right: 0px;
+    // top: 450px;
+    // width: 263px;
+    width: 18.264vw;
+    height: 0px;
+    border: 2px solid #00bee8;
+  }
+  
+  .blurImageRight {
+    position: absolute;
+    right: 0px;
+    top: -6.944vw;
+    z-index: 1;
+    height: 48vw;
+  }
+
+  @media (max-width: 1280px) {
+    .aboutMeHeader {
+      font-size: 72px !important;
+    }
+
+    .aboutMeImage {
+      width: 380px !important;
+      height: 380px !important;
+    }
+
+    .line7 {
+      width: 12vw !important;
+    }
+  }
+
+  @media (max-width: 1180px) {
+    .aboutMeHeader {
+      font-size: 72px !important;
+    }
+
+    .aboutMeImage {
+      width: 380px !important;
+      height: 380px !important;
+    }
+  }
+
+  @media (max-width: 1080px) {
+    .aboutMeHeader {
+      font-size: 72px !important;
+    }
+
+    .aboutMeImage {
+      width: 300px !important;
+      height: 300px !important;
+    }
+  }
+
+  @media (max-width: 993px) {
+    .line7 {
+      width: 8vw !important;
+    }
+  }
+
+  @media (max-width: 946px) {
+    .aboutMeText {
+      margin-bottom: 20px !important;
+    }
+
+    .personalThing {
+      margin-bottom: 0px !important;
+    }
+
+    .descText {
+      margin-top: 0px !important;
+    }
+  }
+
+  @media (max-width: 880px) {
+    .aboutMeContent {
+      height: fit-content;
+    }
+  }
+
+  @media (max-width: 824px) {
+    .line7 {
+      width: 6vw !important;
+    }
+  }
+
+  @media (max-width: 804px) {
+    .aboutMeHeader {
+      font-size: 60px !important;
+    }
+  }
+
+  @media (max-width: 740px) {
+    .aboutMeHeader {
+      font-size: 50px !important;
+    }
+  }
+
+  @media (max-width: 710px) {
+    .aboutMeImageAndLine {
+      display: none !important;
+    }
+
+    .aboutMeText {
+      margin-bottom: 35px !important;
+    }
+
+    .personalThing {
+      margin-bottom: 35px !important;
+    }
+
+    .descText {
+      margin-top: unset !important;
+    }
+
+    .aboutMeContent {
+      justify-content: center;
+      height: fit-content !important;
+    }
+
+    .aboutMeSubContainer {
+      margin-right: 0px !important;
+      margin-left: 0px !important;
+    }
+  }
+
   @media (max-width: 620px) {
     .aboutMeContent {
       height:fit-content !important;
+    }
+
+    .aboutMeSubContainer {
+      margin-right: 28px !important;
+      margin-left: 28px !important;
     }
   }

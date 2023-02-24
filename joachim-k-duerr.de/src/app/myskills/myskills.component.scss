@@ -175,6 +175,12 @@
       transition: 0.3s ease-in-out;
       transform: scale(1.2);
     }
+
+    &:active {
+      background: #4b47ff;
+      transition: 0.3s ease-in-out;
+      transform: scale(1.2);
+    }
   }
   
   .myClass {
@@ -374,7 +380,9 @@
     }
 
     .getInTouchButtonMobile {
-      margin-bottom: 0px !important;
+      // margin-bottom: -25px !important;
+      position: absolute;
+      bottom: -75px;
     }
   }
 

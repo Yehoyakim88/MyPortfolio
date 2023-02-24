@@ -348,6 +348,10 @@
   }
 
   @media (max-width: 718px) {
+    .portfolioSubcontainer {
+      height: fit-content !important;
+    }
+
     .projectContainer {
       margin-top: 298px !important;
     }
@@ -360,6 +364,12 @@
       flex-direction: column-reverse !important;
       margin-bottom: 127px !important;
     }
+
+    .margin-bottom0 {
+      margin-bottom: 0px !important;
+    }
+
+
     .projectPreviewImage {
       height: 175px !important;
       margin-bottom: 50px !important;
