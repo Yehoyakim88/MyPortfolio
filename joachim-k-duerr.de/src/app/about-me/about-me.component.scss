@@ -104,10 +104,15 @@
   
   .blurImageRight {
     position: absolute;
-    right: 0px;
-    top: -6.944vw;
+    // right: 0px;
+    // top: -6.944vw;
+    // height: 48vw;
     z-index: 1;
-    height: 48vw;
+    //
+    height: 608px;
+    // right: -45.71%;
+    right: 0px;
+    top: -115px;
   }
 
   @media (max-width: 1280px) {
@@ -120,9 +125,9 @@
       height: 380px !important;
     }
 
-    .line7 {
-      width: 12vw !important;
-    }
+    // .line7 {
+    //   width: 12vw !important;
+    // }
   }
 
   @media (max-width: 1180px) {
@@ -148,9 +153,9 @@
   }
 
   @media (max-width: 993px) {
-    .line7 {
-      width: 8vw !important;
-    }
+    // .line7 {
+    //   width: 8vw !important;
+    // }
   }
 
   @media (max-width: 946px) {
@@ -167,19 +172,40 @@
     }
   }
 
+  @media (max-width: 933px) {
+    .aboutMeHeader {
+      font-size: 60px !important;
+    }
+  }
+
   @media (max-width: 880px) {
     .aboutMeContent {
       height: fit-content;
     }
   }
 
-  @media (max-width: 824px) {
-    .line7 {
-      width: 6vw !important;
+  @media (max-width: 855px) {
+    .aboutMeHeader {
+      font-size: 54px !important;
     }
   }
 
-  @media (max-width: 804px) {
+  @media (max-width: 824px) {
+    .aboutMeImageAndLine {
+      display: none !important;
+    }
+
+    .blurImageRight {
+      display: none !important;
+    }
+
+    .aboutMeSubContainer {
+      max-width: unset !important;
+      margin-right: 28px;
+    }
+  }
+
+  @media (max-width: 818px) {
     .aboutMeHeader {
       font-size: 60px !important;
     }
@@ -213,10 +239,10 @@
       height: fit-content !important;
     }
 
-    .aboutMeSubContainer {
-      margin-right: 0px !important;
-      margin-left: 0px !important;
-    }
+    // .aboutMeSubContainer {
+    //   margin-right: 0px !important;
+    //   margin-left: 0px !important;
+    // }
   }
 
   @media (max-width: 620px) {
