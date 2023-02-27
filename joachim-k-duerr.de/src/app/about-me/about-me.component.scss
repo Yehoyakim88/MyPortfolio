@@ -191,17 +191,21 @@
   }
 
   @media (max-width: 824px) {
-    .aboutMeImageAndLine {
+    .aboutMeImage {
       display: none !important;
     }
 
-    .blurImageRight {
+    .line7 {
       display: none !important;
     }
 
     .aboutMeSubContainer {
       max-width: unset !important;
       margin-right: 28px;
+    }
+
+    .blurImageRight {
+      top: -165px !important;
     }
   }
 
@@ -253,5 +257,16 @@
     .aboutMeSubContainer {
       margin-right: 28px !important;
       margin-left: 28px !important;
+    }
+
+    .blurImageRight {
+      top: -50px !important;
+      height: 416px !important;
+    }
+  }
+
+  @media (max-width: 440px) {
+    .blurImageRight {
+      display: none !important;
     }
   }

@@ -11,7 +11,6 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { MyskillsComponent } from './myskills/myskills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
-import { ProjectsComponent } from './projects/projects.component';
 import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
@@ -25,7 +24,6 @@ import { FooterComponent } from './footer/footer.component';
     MyskillsComponent,
     PortfolioComponent,
     ContactComponent,
-    ProjectsComponent,
     FooterComponent
   ],
   imports: [

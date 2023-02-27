@@ -1,7 +1,8 @@
 .mySkillsContent {
     height: 100vh;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
+    // position: relative;    
 }
 
 .mySkillsSubcontainer {
@@ -19,6 +20,15 @@
     flex-wrap: wrap;
     z-index: 2;
     margin-top: 32px;
+  }
+
+  .skillsLeftBackgroundImage {
+    position: absolute;
+    z-index: 1;
+    width: 428.59px;
+    height: 951.44px;
+    left: 0;
+    top: 1860px;
   }
   
   .skillsImages {
@@ -184,13 +194,13 @@
   }
   
   .myClass {
-    display: none;
+    // display: none;
     position: absolute;
     z-index: 1;
     width: 428.59px;
     height: 951.44px;
     left: 0;
-    top: 2160px;
+    top: 1860px;
   }
   
   @media (max-width: 1050px) {
@@ -208,6 +218,19 @@
   @media (max-width: 836px) {
     .skillsImages {
       width: 100px !important;
+    }
+  }
+
+  @media (max-width: 880px) {
+    .skillsLeftBackgroundImage {
+      top: 1770px !important;
+    }
+  }
+
+  @media (max-width: 824px) {
+    .skillsLeftBackgroundImage {
+      height: 800px !important;
+      top: 1590px !important;
     }
   }
 
@@ -234,6 +257,17 @@
 
     .getInTouchButton {
       align-self: unset !important;
+    }
+
+    .skillsLeftBackgroundImage {
+      height: 700px !important;
+      top: 1660px !important;
+    }
+  }
+
+  @media (max-width: 710px) {
+    .skillsLeftBackgroundImage {
+      top: 1740px !important;
     }
   }
   
@@ -286,6 +320,11 @@
       margin-left: 10px !important;
       margin-right: 10px !important;
       margin-top: 63px !important;
+    }
+
+    .skillsLeftBackgroundImage {
+      width: 273.59px !important;
+      top: 1650px !important;
     }
   
     .skillsImages {
@@ -345,6 +384,20 @@
       margin-bottom: 45px !important;
     }
   }
+
+  @media (max-width: 578px) {
+    .skillsLeftBackgroundImage {
+      width: 245px !important;
+      height: 605px !important;
+      top: 1840px !important;
+    }
+  }
+
+  @media (max-width: 527px) {
+    .skillsLeftBackgroundImage {
+      top: 1925px !important;
+    }
+  }
   
   @media (max-width: 460px) {
     .mySkillsContent {
@@ -369,6 +422,11 @@
       margin-left: 0px !important;
     }
 
+    .skillsLeftBackgroundImage {
+      left: -28px !important;
+      top: 98px !important;
+    }
+
     .skillsImages {
       margin-left: -9px !important;
       margin-right: -9px !important;
@@ -390,6 +448,10 @@
     .skillsLeft {
       width: 75% !important;
       top: 200px !important;
+    }
+
+    .skillsLeftBackgroundImage {
+      display: none !important;
     }
   }
 

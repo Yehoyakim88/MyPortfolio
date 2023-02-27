@@ -2,7 +2,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: red;
+    // background-color: red;
 }
 
 .mainImageAndText {
@@ -49,6 +49,7 @@
 }
 
 .gradientImage {
+    // display: none;
     position: absolute;
     width: 100%;
     height: 971.56px;
@@ -56,6 +57,18 @@
     right: 0px;
     top: 250px;
     z-index: 0;
+}
+
+.aTest {
+    position: absolute;
+    height: 467.43px;
+    left: 19.93%;
+    right: -80.64%;
+    top: 345.09px;
+
+/* Style 1/Syle 1 a - green purple/Gradient */
+
+    background: linear-gradient(165.69deg, #1A2743 37.75%, #27334B 43.25%, #141D2F 70.18%);     
 }
 
 .mainTextAndButton {
@@ -334,6 +347,10 @@
     .jobTitle {
         font-size: 40px;
     }
+
+    .gradientImage {
+        top: 250px !important;
+    }
 }
 
 @media (max-width: 980px) {
@@ -401,8 +418,8 @@
 
     .gradientImage {
         // width: 100vw !important;
-        height: 300px !important;
-        top: 500px !important; 
+        height: 476.43px !important;
+        top: 345.09px !important; 
     }
 
     .mainTextAndButton {
