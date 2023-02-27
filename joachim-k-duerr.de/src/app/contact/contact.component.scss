@@ -224,6 +224,7 @@
 
     .contactDescriptions {
       margin-left: 90px !important;
+      width: -webkit-fill-available !important;
     }
 
     .contactInputs {
@@ -282,5 +283,11 @@
 
     .multiLineInput {
       width: -webkit-fill-available !important;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .contactHeaderText {
+      width: unset !important;
     }
   }

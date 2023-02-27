@@ -23,6 +23,12 @@
   left: -56px;
 }
 
+.projectsBackgroundImageRight {
+  position: absolute;
+  top: 1430px;
+  right: 0px;
+}
+
 .headerContainer {
     position: absolute;
     right: 0px;
@@ -360,6 +366,10 @@
       top: 940px !important;
       width: 68vw !important;
     }
+
+    .projectsBackgroundImageRight {
+      top: 1290px !important;
+    }
   }
 
   @media (max-width: 760px) {
@@ -383,6 +393,10 @@
     .gitHubButton {
       height: 40px !important;
       width: 105px !important;
+    }
+
+    .projectsBackgroundImageRight {
+      top: 1200px !important;
     }
   }
 
@@ -443,6 +457,10 @@
       width: unset !important;
       z-index: 0;
     }
+
+    .projectsBackgroundImageRight {
+      top: 1770px !important;
+    }
   }
 
   @media (max-width: 701px) {
@@ -456,11 +474,23 @@
     .projectsBackgroundImageLeft {
       top: 1110px !important;
     }
+
+    .projectsBackgroundImageRight {
+      top: 1660px !important;
+    }
   }
 
   @media (max-width: 620px) {
     .projectsBackgroundImageLeft {
       top: 1160px !important;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .projectsBackgroundImageRight {
+      width: 193.25px !important;
+      height: 429px !important;
+      top: 2240px !important;
     }
   }
 
@@ -580,7 +610,7 @@
     .projectsBackgroundImageLeft {
       display: none !important;
     }
-    
+
     .liveTestButton {
       width: 37% !important;
     }
