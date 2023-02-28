@@ -1,18 +1,18 @@
-<div id="my-skills" class="mySkillsContent" style="background-color: red">
+<div id="my-skills" class="mySkillsContent">
   <div class="mySkillsSubcontainer">
       <button class="getInTouchButtonMobile">
         <a href="#contact">Get in touch</a>
       </button>
-      <div class="skillsLeft">
+      <div class="skillsLeft" data-aos="fade-up-right" data-aos-offset="500" data-aos-easing="ease-in-sine">
         <div
           *ngFor="let images of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
           class="skillsImages">
-          <img class="skillImage" src="./../../assets/img/{{ images }}.png" />
+          <img class="skillImage" src="./../../assets/img/{{ images }}.png"/>
           <span class="iconName">{{ iconNames[images - 1] }}</span>
         </div>
         <img class="skillsLeftBackgroundImage" src="./../../assets/img/L. blue 1.png">
       </div>
-      <div class="skillsDescription">
+      <div class="skillsDescription" data-aos="fade-up-left" data-aos-offset="500" data-aos-easing="ease-in-sine">
         <div class="absolutePosition">
           <div class="mySkillsHeader">
             <span>My skills</span>
