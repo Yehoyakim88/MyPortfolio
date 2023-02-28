@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { HeaderComponent } from './header/header.component';
 import { ImprintComponent } from './imprint/imprint.component';
-import { MainComponent } from './main/main.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { MyskillsComponent } from './myskills/myskills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
@@ -19,7 +18,6 @@ import { FooterComponent } from './footer/footer.component';
     MenuComponent,
     HeaderComponent,
     ImprintComponent,
-    MainComponent,
     AboutMeComponent,
     MyskillsComponent,
     PortfolioComponent,

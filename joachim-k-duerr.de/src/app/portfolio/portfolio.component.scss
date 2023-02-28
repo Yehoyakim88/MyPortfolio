@@ -1,16 +1,11 @@
 .portfolioContent {
-    // height: 100vh;
     display: flex;
     position: relative;
     flex-direction: column;
     margin-top: var(--height-menu);
-    // top: 0px;
-    // left: 0px;
 }
 
 .portfolioSubcontainer {
-    background-color: rgb(255, 149, 0);
-    // margin-top: var(--height-menu);
     margin-left: 28px;
     margin-right: 28px;
     display: flex;
@@ -58,7 +53,7 @@
     font-family: "Poppins Bold";
     font-style: normal;
     font-weight: 700;
-    font-size: 9vw;
+    font-size: 90px;
     line-height: 120%;
     text-align: center;
     color: #ffffff;
@@ -89,7 +84,6 @@
     width: 33.61vw;
     height: 0px;
     border: 3px solid #4b47ff;
-    // border-radius: 4px 0px 0px 4px;
   }
   
   .line6 {
@@ -98,7 +92,6 @@
     right: 0px;
     width: 7.56944vw;
     height: 0px;
-    
     border: 3px solid #4b47ff;
     border-radius: 4px 0px 0px 4px;
   }
@@ -128,7 +121,6 @@
     justify-content: center;
     width: 50%;
     height: fit-content;
-    background-color: goldenrod;
   }
   
   .descriptionContainerLeft {
@@ -137,8 +129,6 @@
     flex-direction: column;
     align-items: flex-end;
     width: 50%;
-    background-color: purple;
-    // margin-left: 10.4167vw; // equals 150px
   }
   
   .descriptionContainerRight {
@@ -146,8 +136,6 @@
     display: flex;
     flex-direction: column;
     width: 50%;
-    background-color: purple;
-    // margin-left: 10.4167vw; // equals 150px
   }
   
   .descriptionContainerReverse {
@@ -156,7 +144,6 @@
   }
   
   .projectTitle {
-    // width: 26.042vw;
     height: 42.82px;
     font-family: "Poppins";
     font-style: normal;
@@ -514,17 +501,14 @@
 
   @media (max-width: 460px) {
     .projectTitle {
-      // margin-top: unset !important;
       margin-bottom: 15px !important;
     }
 
     .projectTechnologies {
-      // margin-top: unset !important;
       margin-bottom: 15px !important;
     }
 
     .projectDescription {
-      // margin-top: unset !important;
       margin-bottom: unset !important;
     }
 

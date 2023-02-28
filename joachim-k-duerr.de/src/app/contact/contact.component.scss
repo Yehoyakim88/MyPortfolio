@@ -1,5 +1,4 @@
 .contactContent {
-    // height: fit-content;
     display: flex;
     flex-direction: column;
 }
@@ -14,8 +13,8 @@
 }
 
 .contactHeader {
+    z-index: 2;
     position: relative;
-    // top: var(--height-menu);
     left: -28px;
     display: flex;
     align-items: center;
@@ -30,8 +29,6 @@
   }
   
   .contactHeaderText {
-    // position: absolute;
-    // left: 106px;
     margin-left: 50px;
     width: 376px;
     height: var(--height-contactHeaderText);
@@ -42,6 +39,7 @@
     line-height: 120%;
     text-align: center;
     color: #ffffff;
+    z-index: 2;
   }
   
   .contactSubHeaderText {
@@ -52,6 +50,7 @@
     font-size: 32px;
     line-height: 120%;
     color: #ffffff;
+    z-index: 2;
   }
   
   .contactMainSection {
@@ -75,6 +74,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
+    z-index: 2;
   }
   
   .invitationContainer {
@@ -87,12 +87,14 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
+    z-index: 2;
   }
   
   .textBold {
     font-family: "Poppins Bold";
     font-weight: 400;
     margin-left: 6px;
+    z-index: 2;
   }
   
   .contactInputs {
@@ -123,6 +125,7 @@
     font-size: 16px;
     line-height: 120%;
     color: #ffffff;
+    z-index: 2;
     &:hover {
       border: 1px solid #00bee8;
     }
@@ -142,6 +145,7 @@
     font-size: 16px;
     line-height: 120%;
     color: #ffffff;
+    z-index: 2;
     &:hover {
       border: 1px solid #00bee8;
     }
@@ -151,33 +155,21 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    // align-items: center;
     padding: 15px 30px;
     margin-bottom: 102px;
     width: 253px;
     height: 58px;
-    /* identical to box height, or 28px */
-  
     background: #00bee8;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     border: 0;
-  
-    // width: 193px;
-    // height: 58px;
-  
-    /* Style 1/subtitles */
-  
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
     font-size: 23px;
     line-height: 120%;
-    /* identical to box height, or 28px */
-  
-    /* White */
-  
     color: #ffffff;
+    z-index: 2;
   
     &:hover {
       cursor: pointer;
@@ -258,7 +250,6 @@
     }
     
     .contactMainSection {
-      // justify-content: space-between !important;
       flex-direction: column !important;
       margin-left: unset !important;
     }
