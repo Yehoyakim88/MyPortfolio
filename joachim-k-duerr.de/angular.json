@@ -90,7 +90,8 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "favicon.png"
             ],
             "styles": [
               "node_modules/aos/dist/aos.css",
