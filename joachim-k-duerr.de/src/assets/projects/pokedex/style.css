@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.d-invisible {
+    visibility: hidden !important;
+}
+
+.zoom {
+    transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    cursor: pointer;
+}
+
+.backToMainPageArrow {
+    border-top-left-radius: 10px;
+}
+
+.backToMainPageArrow:hover {
+    cursor: pointer;
+    background-color: var(--hoverColor);
+}
+
+.headerSub {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* .headerSub img {
+    margin-right: 16px;
+} */
+
+.hovereffect:hover {
+    cursor: pointer;
+    filter: brightness(0.5);
+}
+
+.main {
+    /* background-color: rgb(255, 255, 255); */
+    background-color: #141D2F;
+    border-radius: 10px;
+    /* margin: 20px; */
+    height: fit-content;
+}
+
+.pokeContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 48px;
+    padding-right: 48px;
+    /* margin-top: 32px; */
+    border-radius: 100%;
+}
+
+.pokemon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    margin: 32px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.pokeHeader {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 16px;
+    border-radius: 20px;
+    border: solid 1px rgb(0, 0, 0);
+}
+
+.pokeHeaderSub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+   
+}
+
+.pokeType {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 16px;
+}
+
+.pokeImageContainer {
+    height: fit-content;
+    width: fit-content;
+    background-image: url('./img/pokeball.png');
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 100%;
+}
+
+.pokeImage {
+    width: 256px;
+    height: 256px;
+    object-fit: cover;
+    align-self: center;
+}
+
+.pokeImageDetails {
+    /* position: absolute;
+    top: 50%;
+    left: calc(50% - 128px);
+    z-index: 1; */
+    margin-left: 100px;
+    width: 256px;
+    height: 256px;
+    object-fit: cover;
+}
+
+.pokeDetailsContainer {
+    /* position: absolute;
+    top: 50px;
+    left: 100px; */
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+.pokeDetailsType {
+    border-radius: 20px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.specsNavigation {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 2px solid rgb(168, 168, 168);
+    /* border-bottom: 2px solid rgb(51, 37, 180); */
+    margin-top: 32px;
+}
+
+.specsHeader {
+    border-bottom: 2px solid transparent;
+}
+
+.specsHeader:hover {
+    cursor: pointer;
+    color: rgb(51, 37, 180);
+}
+
+.pokeSpecifications {
+    margin-top: 40px;
+    padding: 16px;
+}
+
+.aboutContainer {
+    display: flex;
+}
+
+.aboutHeaders {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutHeader {
+    margin: 10px;
+    color: rgb(125, 125, 125);
+}
+
+.aboutDescriptions {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutDesc {
+    margin: 10px;
+}
+
+.pokeAbilities {
+    display: flex;
+}
+
+.pokeType {
+    margin: 16px;
+    border-radius: 20px;
+    border: solid 1px rgb(0, 0, 0);
+}
+
+/* detail view of Pokemons */
+.pokedex {
+    position: relative;
+    min-height: 50vh;
+    background-color: rgb(219, 33, 33);
+    color: white;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    width: 100%;
+}
+
+.infoContainer {
+    z-index: 1;
+    background-color: #f8f9fa;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: -40px;
+    min-height: 300px;
+    width: 100%;
+}
+
+.barBackground {
+    background-color: rgb(238, 228, 228);
+    height: 4px;
+    border-radius: 3px;
+    margin-left: 15px;
+}
+
+.barWidth {
+    width: 80%;
+}
+
+.bars {
+    height: 4px;
+    background-color: #69C26A;
+    border-radius: 3px;
+}
+
+:root {
+    --hoverColor: #ffff;
+}
