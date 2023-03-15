@@ -21,18 +21,18 @@
 
 .mainImage {
     position: absolute;
-    top: 0px;
+    top: 10px;
     left: 0;
     right: 0;
     bottom: 0;
-    height: 530px;
-    width: 400px;
+    // height: 530px; // edit on 2023-03-15 17:00
+    width: 480px;
     object-fit: contain;
-    z-index: 2;
+    z-index: 0;
 }
 
 .personBackgroundImage {
-    z-index: 0;
+    z-index: -1;
     position: absolute;
     top: 0px;
     left: -68px;
@@ -48,7 +48,7 @@
     left: 0px;
     right: 0px;
     top: 250px;
-    z-index: 0;
+    z-index: 1;
 }
 
 .aTest {
@@ -475,6 +475,11 @@
       .mainImage {
         width: 90vw !important;
         height: 50vh !important;
+      }
+
+      .gradientImage {
+        height: 200px !important;
+        top: 408px !important;
       }
 
 }
